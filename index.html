@@ -1,0 +1,488 @@
+<!doctype html> <html lang="en"> <head> <meta charset="utf-8" /> <title>Orrin Onken — Author of the Leopold Larson Mysteries and Essays on Aging</title> <meta name="viewport" content="width=device-width, initial-scale=1" /> <meta name="description" content="The official landing page for Orrin Onken, retired elder-law attorney and author of the Leopold Larson mysteries and essays on aging and recovery. Read his work and explore his books." /> <link rel="canonical" href="https://example.com/" />
+<meta property="og:title" content="Orrin Onken — Author" />
+<meta property="og:description"
+      content="Mysteries with a legal edge and essays on aging and recovery. Explore books and read
+               essays by Orrin Onken." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://example.com/" />
+<meta property="og:image" content="https://example.com/leocover.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Orrin Onken — Author" />
+<meta name="twitter:description"
+      content="Mysteries with a legal edge and essays on aging and recovery. Explore books and read
+               essays by Orrin Onken." />
+<meta name="twitter:image" content="https://example.com/leocover.jpg" />
+
+<style>
+  :root {
+    --bg: #0f1115;
+    --panel: #141821;
+    --text: #e7e9ee;
+    --muted: #b6bcc7;
+    --accent: #ffd166;
+    --accent-2: #6ec1e4;
+    --link: #9bd1ff;
+    --border: #232a36;
+    --shadow: rgba(0, 0, 0, 0.35);
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, "Helvetica Neue",
+      Arial, system-ui, sans-serif;
+    background: radial-gradient(1200px 800px at 20% -10%, #1a1f2a 0%, var(--bg) 60%);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  a { color: var(--link); text-decoration: none; }
+  a:hover, a:focus { text-decoration: underline; }
+
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    backdrop-filter: blur(6px);
+    background: color-mix(in srgb, var(--bg) 85%, transparent);
+    border-bottom: 1px solid var(--border);
+  }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+  }
+  .brand { font-weight: 700; letter-spacing: .4px; }
+  .brand span { color: var(--accent); }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  nav a { color: var(--text); opacity: .9; }
+
+  .hero {
+    padding: 72px 0 48px;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 36px;
+    align-items: center;
+  }
+  @media (max-width: 900px) {
+    .hero { grid-template-columns: 1fr; padding: 56px 0 24px; }
+  }
+  h1 {
+    font-size: clamp(2rem, 3.5vw + 1rem, 3.25rem);
+    line-height: 1.1;
+    margin: 0 0 16px;
+  }
+  .kicker { text-transform: uppercase; letter-spacing: .2em; font-size: .8rem; color: var(--muted); }
+  .lede { font-size: 1.1rem; color: var(--muted); max-width: 60ch; }
+  .cta { margin-top: 24px; display: flex; gap: 12px; flex-wrap: wrap; }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 16px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    background: linear-gradient(180deg, #1b2230, #121620);
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 6px 20px var(--shadow);
+  }
+  .btn:hover { transform: translateY(-1px); }
+  .btn.accent {
+    background: linear-gradient(180deg, #ffe08a, #ffc14d);
+    color: #1b1200;
+    border-color: #f3b23a;
+  }
+
+  .panel {
+    background: linear-gradient(180deg, var(--panel), #101420);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 8px 24px var(--shadow);
+  }
+
+  section { padding: 40px 0; }
+  h2 { font-size: 1.75rem; margin: 0 0 16px; }
+
+  .grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  .col-6 { grid-column: span 6; }
+  .col-4 { grid-column: span 4; }
+  .col-12 { grid-column: span 12; }
+  @media (max-width: 900px) {
+    .col-6, .col-4 { grid-column: span 12; }
+  }
+
+  .book {
+    display: grid;
+    grid-template-columns: 1fr 2.2fr;
+    gap: 16px;
+    align-items: start;
+  }
+  @media (max-width: 700px) {
+    .book { grid-template-columns: 1fr; }
+  }
+  .cover {
+    width: 100%;
+    aspect-ratio: 2/3;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #212836 0%, #0f141f 100%);
+    border: 1px dashed #2b3444;
+    display: grid;
+    place-items: center;
+    color: var(--muted);
+    font-size: .9rem;
+    padding: 10px;
+    text-align: center;
+  }
+  .tag {
+    display: inline-block;
+    font-size: .75rem;
+    background: #1f2633;
+    color: var(--accent-2);
+    padding: 2px 8px;
+    border-radius: 999px;
+    border: 1px solid #283246;
+  }
+  .book h3 { margin: 6px 0 8px; font-size: 1.25rem; }
+  .book p { margin: 0 0 12px; color: var(--muted); }
+
+  .stack { display: flex; gap: 10px; flex-wrap: wrap; }
+  .about p { color: var(--muted); }
+
+  /* Hero media (leocover.jpg) */
+  .hero-media {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px var(--shadow);
+    border: 1px solid var(--border);
+    background: #0f141f;
+  }
+  .hero-media img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .hero-media figcaption {
+    position: absolute;
+    bottom: 8px;
+    left: 10px;
+    right: 10px;
+    font-size: 0.8rem;
+    color: #d8dee9;
+    background: linear-gradient(180deg, rgba(15,17,21,0) 0%, rgba(15,17,21,0.75) 70%);
+    padding: 28px 10px 10px;
+    border-radius: 0 0 14px 14px;
+  }
+
+  footer {
+    padding: 32px 0 48px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+  }
+  .small { font-size: .92rem; }
+</style>
+</head> <body> <!-- Header --> <header> <div class="wrap nav"> <div class="brand">Orrin <span>Onken</span></div> <nav aria-label="Primary"> <ul> <li><a href="#books">Books</a></li> <li><a href="#essays">Essays</a></li> <li><a href="#about">About</a></li> </ul> </nav> </div> </header>
+<!-- Main -->
+<main class="wrap">
+  <!-- Hero -->
+  <section class="hero">
+    <div>
+      <div class="kicker">Author • Legal Mysteries • Essays on Aging</div>
+      <h1>
+        Mysteries with a legal edge. Essays with heart, humor, and hard-won wisdom.
+      </h1>
+      <p class="lede">
+        Orrin Onken is a retired elder-law attorney from Portland, Oregon whose
+        writing blends courtroom realism with recovery-savvy insight. He is the author of the
+        Leopold Larson mysteries and a collection of essays on getting older, and he writes
+        regularly for the Crows Feet publication on Medium.
+      </p>
+      <div class="cta">
+        <a class="btn accent" href="#books">Browse the Books</a>
+        <a class="btn" href="#essays">Read Essays</a>
+      </div>
+    </div>
+
+    <!-- Hero image with your leocover.jpg -->
+    <figure class="hero-media">
+      <img
+        src="leocover.jpg"
+        alt="Leopold Larson vibe: detective on the phone alongside the covers of The Duke of Morrison Street and The Holders of Helmut Street."
+        loading="eager"
+        decoding="async"
+        width="900"
+        height="1200" />
+      <figcaption>Leopold Larson Mysteries — Portland grit.</figcaption>
+    </figure>
+  </section>
+
+  <!-- Books -->
+  <section id="books" aria-labelledby="books-title">
+    <h2 id="books-title">Books</h2>
+
+    <div class="grid">
+      <!-- Why Old People Are Mean -->
+      <div class="col-6">
+        <article class="panel book">
+          <div class="cover" aria-hidden="true">
+            Why Old People Are Mean<br />
+            Essays
+          </div>
+          <div>
+            <span class="tag">Essays</span>
+            <h3>Why Old People Are Mean</h3>
+            <p>
+              A light-hearted, clear-eyed collection about aging and retirement — from small
+              dogs and self‑care to wills and road trips — with practical wisdom tucked beneath
+              the laughs.
+            </p>
+            <div class="stack">
+              <a class="btn"
+                 href="https://www.amazon.com/dp/B0BH589FM6"
+                 target="_blank"
+                 rel="noopener">Buy on Amazon</a>
+              <a class="btn" href="#essays">Read essays online</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- The Duke of Morrison Street -->
+      <div class="col-6">
+        <article class="panel book">
+          <div class="cover" aria-hidden="true">
+            The Duke of Morrison Street<br />
+            A Leopold Larson Mystery
+          </div>
+          <div>
+            <span class="tag">Mystery</span>
+            <h3>The Duke of Morrison Street</h3>
+            <p>
+              Sober again and practicing probate law, Leopold Larson chases a
+              hot‑dog‑vendor‑turned‑heiress through Portland’s AA underbelly, squaring off with
+              the city’s most powerful firm in a case that tests his license — and his luck.
+            </p>
+            <div class="stack">
+              <a class="btn"
+                 href="https://www.amazon.com/dp/B002YQ2K38"
+                 target="_blank"
+                 rel="noopener">Buy on Amazon</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- The Holders of Helmut Street -->
+      <div class="col-6">
+        <article class="panel book">
+          <div class="cover" aria-hidden="true">
+            Holders of Helmut Street<br />
+            A Leopold Larson Mystery
+          </div>
+          <div>
+            <span class="tag">Mystery</span>
+            <h3>The Holders of Helmut Street</h3>
+            <p>
+              As Ben Holder slips into dementia, Leo must navigate a family in chaos, a thicket
+              of courts and caseworkers, and his own precarious standing to protect a vulnerable
+              client.
+            </p>
+            <div class="stack">
+              <a class="btn"
+                 href="https://www.amazon.com/dp/B0859LW6M2"
+                 target="_blank"
+                 rel="noopener">Buy on Amazon</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Malady Manor -->
+      <div class="col-6">
+        <article class="panel book">
+          <div class="cover" aria-hidden="true">
+            Malady Manor<br />
+            Fiction
+          </div>
+          <div>
+            <span class="tag">Fiction</span>
+            <h3>Malady Manor</h3>
+            <p>
+              A cynical ex‑lawyer fights his way through the sense and nonsense of addiction
+              treatment — a wry, inside look at recovery that’s as relatable as it is
+              revealing.
+            </p>
+            <div class="stack">
+              <a class="btn"
+                 href="https://www.amazon.com/dp/B0033AGQ8Y"
+                 target="_blank"
+                 rel="noopener">Buy on Amazon</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Essays -->
+  <section id="essays" aria-labelledby="essays-title">
+    <div class="grid">
+      <div class="col-12">
+        <div class="panel">
+          <h2 id="essays-title">Essays</h2>
+          <p>
+            Orrin writes frequently about aging, retirement, and life after the law — with
+            humor and practical insight. Read his latest work on Medium, where he’s a regular
+            contributor to the Crows Feet publication.
+          </p>
+          <div class="cta">
+            <a class="btn accent"
+               href="https://medium.com/@orrinonken"
+               target="_blank"
+               rel="noopener">Read on Medium</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about" aria-labelledby="about-title">
+    <div class="grid">
+      <div class="col-6">
+        <div class="panel">
+          <h2 id="about-title">About Orrin</h2>
+          <p>
+            Orrin Onken is a retired elder‑law attorney from Portland, Oregon. His
+            fiction features Leopold Larson, a sober, sharp‑witted lawyer who knows the justice
+            system from the inside; his nonfiction gathers generous, funny essays about growing
+            older and living well.
+          </p>
+          <p>
+            He has written extensively about aging on Medium and authored two legal mysteries
+            alongside other works of fiction. Off the page, he bakes bread and walks his dog,
+            Bob, around the ponds near his home.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-6">
+        <div class="panel">
+          <h2>Why readers love his work</h2>
+          <ul>
+            <li>
+              Authenticity: a career in elder law and a candid recovery journey inform the
+              details and the humor.
+            </li>
+            <li>
+              Heart and wit: essays that entertain while slipping in useful wisdom about aging.
+            </li>
+            <li>
+              Legal stakes: mysteries that balance high tension with humane, street‑level
+              insight.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section aria-label="Call to action">
+    <div class="panel">
+      <div class="grid">
+        <div class="col-8">
+          <h2>Start reading today</h2>
+          <p class="small">
+            Whether you’re here for a sharp, insider legal mystery or for essays that make you
+            nod and smile, you’ll find something you’ll want to share. Pick a book or dive into
+            the latest posts.
+          </p>
+        </div>
+        <div class="col-4"
+             style="display: flex; align-items: center; justify-content: flex-end; gap: 10px;
+                    flex-wrap: wrap;">
+          <a class="btn accent" href="#books">Shop the books</a>
+          <a class="btn" href="https://medium.com/@orrinonken" target="_blank" rel="noopener">
+            Read essays
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="wrap">
+  <div class="grid">
+    <div class="col-12">
+      <div class="small">
+        © <span id="year"></span> Orrin Onken. All rights reserved.
+        • <a href="#about">About</a>
+        • <a href="#books">Books</a>
+        • <a href="https://medium.com/@orrinonken" target="_blank" rel="noopener">Medium</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+<!-- Structured data -->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Orrin Onken",
+    "jobTitle": "Author",
+    "description": "Retired elder-law attorney and author of the Leopold Larson mysteries and essays on aging.",
+    "url": "https://example.com/",
+    "sameAs": [
+      "https://medium.com/@orrinonken"
+    ],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Crows Feet (Medium)"
+    },
+    "hasPart": [
+      {
+        "@type": "Book",
+        "name": "Why Old People Are Mean",
+        "url": "https://www.amazon.com/dp/B0BH589FM6"
+      },
+      {
+        "@type": "Book",
+        "name": "The Duke of Morrison Street",
+        "url": "https://www.amazon.com/dp/B002YQ2K38"
+      },
+      {
+        "@type": "Book",
+        "name": "The Holders of Helmut Street",
+        "url": "https://www.amazon.com/dp/B0859LW6M2"
+      },
+      {
+        "@type": "Book",
+        "name": "Malady Manor",
+        "url": "https://www.amazon.com/dp/B0033AGQ8Y"
+      }
+    ]
+  }
+</script>
+</body> </html>
