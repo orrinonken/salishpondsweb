@@ -140,19 +140,16 @@
   @media (max-width: 700px) {
     .book { grid-template-columns: 1fr; }
   }
-  .cover {
+  
+  .cover-img {
     width: 100%;
     aspect-ratio: 2/3;
+    object-fit: cover;
     border-radius: 10px;
-    background: linear-gradient(135deg, #212836 0%, #0f141f 100%);
-    border: 1px dashed #2b3444;
-    display: grid;
-    place-items: center;
-    color: var(--muted);
-    font-size: .9rem;
-    padding: 10px;
-    text-align: center;
+    border: 1px solid var(--border);
+    box-shadow: 0 4px 12px var(--shadow);
   }
+
   .tag {
     display: inline-block;
     font-size: .75rem;
@@ -264,10 +261,7 @@
       <!-- Pacific Northwest Gothic (New Release) -->
       <div class="col-6">
         <article class="panel book">
-          <div class="cover" aria-hidden="true">
-            Pacific Northwest Gothic<br />
-            A History of the Future
-          </div>
+          <img src="pnw-gothic.jpg" alt="Pacific Northwest Gothic book cover" class="cover-img" />
           <div>
             <span class="tag new-release">New Release</span>
             <h3>Pacific Northwest Gothic</h3>
@@ -287,10 +281,7 @@
       <!-- Why Old People Are Mean -->
       <div class="col-6">
         <article class="panel book">
-          <div class="cover" aria-hidden="true">
-            Why Old People Are Mean<br />
-            Essays
-          </div>
+          <img src="why-old-people.jpg" alt="Why Old People Are Mean book cover" class="cover-img" />
           <div>
             <span class="tag">Essays</span>
             <h3>Why Old People Are Mean</h3>
@@ -313,10 +304,7 @@
       <!-- The Duke of Morrison Street -->
       <div class="col-6">
         <article class="panel book">
-          <div class="cover" aria-hidden="true">
-            The Duke of Morrison Street<br />
-            A Leopold Larson Mystery
-          </div>
+          <img src="duke-of-morrison.jpg" alt="The Duke of Morrison Street book cover" class="cover-img" />
           <div>
             <span class="tag">Mystery</span>
             <h3>The Duke of Morrison Street</h3>
@@ -338,10 +326,7 @@
       <!-- The Holders of Helmut Street -->
       <div class="col-6">
         <article class="panel book">
-          <div class="cover" aria-hidden="true">
-            Holders of Helmut Street<br />
-            A Leopold Larson Mystery
-          </div>
+          <img src="holders-of-helmut.jpg" alt="The Holders of Helmut Street book cover" class="cover-img" />
           <div>
             <span class="tag">Mystery</span>
             <h3>The Holders of Helmut Street</h3>
@@ -363,10 +348,7 @@
       <!-- Malady Manor -->
       <div class="col-6">
         <article class="panel book">
-          <div class="cover" aria-hidden="true">
-            Malady Manor<br />
-            Fiction
-          </div>
+          <img src="malady-manor.jpg" alt="Malady Manor book cover" class="cover-img" />
           <div>
             <span class="tag">Fiction</span>
             <h3>Malady Manor</h3>
