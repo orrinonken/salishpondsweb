@@ -5,18 +5,20 @@
 <title>Orrin Onken — Author of Pacific Northwest Gothic, Leopold Larson Mysteries, and Essays on Aging</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="description" content="The official landing page for Orrin Onken, author of Pacific Northwest Gothic: A History of the Future, the Leopold Larson mysteries, and essays on aging. Read his work and explore his books." />
-<link rel="canonical" href="https://example.com/" />
+<link rel="canonical" href="https://salishpondspress.com/" />
 <meta property="og:title" content="Orrin Onken — Author" />
 <meta property="og:description"
       content="Author of Pacific Northwest Gothic: A History of the Future, mysteries with a legal edge, and essays on aging. Explore books by Orrin Onken." />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://example.com/" />
-<meta property="og:image" content="https://example.com/leocover.jpg" />
+<meta property="og:url" content="https://salishpondspress.com/" />
+<meta property="og:image" content="https://salishpondspress.com/leocover.jpg" />
+<meta property="og:image:width" content="900" />
+<meta property="og:image:height" content="1200" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Orrin Onken — Author" />
 <meta name="twitter:description"
       content="Author of Pacific Northwest Gothic: A History of the Future, mysteries with a legal edge, and essays on aging. Explore books by Orrin Onken." />
-<meta name="twitter:image" content="https://example.com/leocover.jpg" />
+<meta name="twitter:image" content="https://salishpondspress.com/leocover.jpg" />
 
 <style>
   :root {
@@ -140,16 +142,19 @@
   @media (max-width: 700px) {
     .book { grid-template-columns: 1fr; }
   }
-  
-  .cover-img {
+  .cover {
     width: 100%;
     aspect-ratio: 2/3;
-    object-fit: cover;
     border-radius: 10px;
-    border: 1px solid var(--border);
-    box-shadow: 0 4px 12px var(--shadow);
+    background: linear-gradient(135deg, #212836 0%, #0f141f 100%);
+    border: 1px dashed #2b3444;
+    display: grid;
+    place-items: center;
+    color: var(--muted);
+    font-size: .9rem;
+    padding: 10px;
+    text-align: center;
   }
-
   .tag {
     display: inline-block;
     font-size: .75rem;
@@ -261,7 +266,10 @@
       <!-- Pacific Northwest Gothic (New Release) -->
       <div class="col-6">
         <article class="panel book">
-          <img src="pnw-gothic.jpg" alt="Pacific Northwest Gothic book cover" class="cover-img" />
+          <div class="cover" aria-hidden="true">
+            Pacific Northwest Gothic<br />
+            A History of the Future
+          </div>
           <div>
             <span class="tag new-release">New Release</span>
             <h3>Pacific Northwest Gothic</h3>
@@ -281,7 +289,10 @@
       <!-- Why Old People Are Mean -->
       <div class="col-6">
         <article class="panel book">
-          <img src="why-old-people.jpg" alt="Why Old People Are Mean book cover" class="cover-img" />
+          <div class="cover" aria-hidden="true">
+            Why Old People Are Mean<br />
+            Essays
+          </div>
           <div>
             <span class="tag">Essays</span>
             <h3>Why Old People Are Mean</h3>
@@ -304,7 +315,10 @@
       <!-- The Duke of Morrison Street -->
       <div class="col-6">
         <article class="panel book">
-          <img src="duke-of-morrison.jpg" alt="The Duke of Morrison Street book cover" class="cover-img" />
+          <div class="cover" aria-hidden="true">
+            The Duke of Morrison Street<br />
+            A Leopold Larson Mystery
+          </div>
           <div>
             <span class="tag">Mystery</span>
             <h3>The Duke of Morrison Street</h3>
@@ -326,7 +340,10 @@
       <!-- The Holders of Helmut Street -->
       <div class="col-6">
         <article class="panel book">
-          <img src="holders-of-helmut.jpg" alt="The Holders of Helmut Street book cover" class="cover-img" />
+          <div class="cover" aria-hidden="true">
+            Holders of Helmut Street<br />
+            A Leopold Larson Mystery
+          </div>
           <div>
             <span class="tag">Mystery</span>
             <h3>The Holders of Helmut Street</h3>
@@ -348,7 +365,10 @@
       <!-- Malady Manor -->
       <div class="col-6">
         <article class="panel book">
-          <img src="malady-manor.jpg" alt="Malady Manor book cover" class="cover-img" />
+          <div class="cover" aria-hidden="true">
+            Malady Manor<br />
+            Fiction
+          </div>
           <div>
             <span class="tag">Fiction</span>
             <h3>Malady Manor</h3>
@@ -480,7 +500,7 @@
     "name": "Orrin Onken",
     "jobTitle": "Author",
     "description": "Retired elder-law attorney and author of Pacific Northwest Gothic, the Leopold Larson mysteries, and essays on aging.",
-    "url": "https://example.com/",
+    "url": "https://salishpondspress.com/",
     "sameAs": [
       "https://medium.com/@orrinonken"
     ],
