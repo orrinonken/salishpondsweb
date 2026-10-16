@@ -142,19 +142,32 @@
   @media (max-width: 700px) {
     .book { grid-template-columns: 1fr; }
   }
-  .cover {
+
+  /* Clickable Book Cover Styling (Uncropped & Natural Ratio) */
+  .cover-link {
+    display: block;
     width: 100%;
-    aspect-ratio: 2/3;
-    border-radius: 10px;
-    background: linear-gradient(135deg, #212836 0%, #0f141f 100%);
-    border: 1px dashed #2b3444;
-    display: grid;
-    place-items: center;
-    color: var(--muted);
-    font-size: .9rem;
-    padding: 10px;
-    text-align: center;
+    align-self: start;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #141821;
+    border: 1px solid var(--border);
+    box-shadow: 0 6px 18px var(--shadow);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
+  .cover-link:hover, .cover-link:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+  }
+  .cover-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 7px;
+  }
+
   .tag {
     display: inline-block;
     font-size: .75rem;
@@ -245,7 +258,7 @@
       </div>
     </div>
 
-    <!-- Hero image with your leocover.jpg -->
+    <!-- Hero image -->
     <figure class="hero-media">
       <img
         src="leocover.jpg"
@@ -266,10 +279,9 @@
       <!-- Pacific Northwest Gothic (New Release) -->
       <div class="col-6">
         <article class="panel book">
-          <div class="cover" aria-hidden="true">
-            Pacific Northwest Gothic<br />
-            A History of the Future
-          </div>
+          <a class="cover-link" href="pnw-gothic.jpg" target="_blank" rel="noopener">
+            <img class="cover-img" src="pnw-gothic.jpg" alt="Pacific Northwest Gothic Cover" loading="lazy" />
+          </a>
           <div>
             <span class="tag new-release">New Release</span>
             <h3>Pacific Northwest Gothic</h3>
@@ -289,10 +301,9 @@
       <!-- Why Old People Are Mean -->
       <div class="col-6">
         <article class="panel book">
-          <div class="cover" aria-hidden="true">
-            Why Old People Are Mean<br />
-            Essays
-          </div>
+          <a class="cover-link" href="why-old-people.jpg" target="_blank" rel="noopener">
+            <img class="cover-img" src="why-old-people.jpg" alt="Why Old People Are Mean Cover" loading="lazy" />
+          </a>
           <div>
             <span class="tag">Essays</span>
             <h3>Why Old People Are Mean</h3>
@@ -315,10 +326,9 @@
       <!-- The Duke of Morrison Street -->
       <div class="col-6">
         <article class="panel book">
-          <div class="cover" aria-hidden="true">
-            The Duke of Morrison Street<br />
-            A Leopold Larson Mystery
-          </div>
+          <a class="cover-link" href="duke-of-morrison.jpg" target="_blank" rel="noopener">
+            <img class="cover-img" src="duke-of-morrison.jpg" alt="The Duke of Morrison Street Cover" loading="lazy" />
+          </a>
           <div>
             <span class="tag">Mystery</span>
             <h3>The Duke of Morrison Street</h3>
@@ -340,10 +350,9 @@
       <!-- The Holders of Helmut Street -->
       <div class="col-6">
         <article class="panel book">
-          <div class="cover" aria-hidden="true">
-            Holders of Helmut Street<br />
-            A Leopold Larson Mystery
-          </div>
+          <a class="cover-link" href="holders-of-helmut.jpg" target="_blank" rel="noopener">
+            <img class="cover-img" src="holders-of-helmut.jpg" alt="The Holders of Helmut Street Cover" loading="lazy" />
+          </a>
           <div>
             <span class="tag">Mystery</span>
             <h3>The Holders of Helmut Street</h3>
@@ -365,10 +374,9 @@
       <!-- Malady Manor -->
       <div class="col-6">
         <article class="panel book">
-          <div class="cover" aria-hidden="true">
-            Malady Manor<br />
-            Fiction
-          </div>
+          <a class="cover-link" href="malady-manor.jpg" target="_blank" rel="noopener">
+            <img class="cover-img" src="malady-manor.jpg" alt="Malady Manor Cover" loading="lazy" />
+          </a>
           <div>
             <span class="tag">Fiction</span>
             <h3>Malady Manor</h3>
@@ -467,75 +475,3 @@
           <a class="btn" href="https://medium.com/@orrinonken" target="_blank" rel="noopener">
             Read essays
           </a>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
-
-<!-- Footer -->
-<footer class="wrap">
-  <div class="grid">
-    <div class="col-12">
-      <div class="small">
-        © <span id="year"></span> Orrin Onken • Salish Ponds Press. All rights reserved.
-        • <a href="#about">About</a>
-        • <a href="#books">Books</a>
-        • <a href="https://medium.com/@orrinonken" target="_blank" rel="noopener">Medium</a>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<!-- Scripts -->
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
-
-<!-- Structured data -->
-<script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Orrin Onken",
-    "jobTitle": "Author",
-    "description": "Retired elder-law attorney and author of Pacific Northwest Gothic, the Leopold Larson mysteries, and essays on aging.",
-    "url": "https://salishpondspress.com/",
-    "sameAs": [
-      "https://medium.com/@orrinonken"
-    ],
-    "publisher": {
-      "@type": "Organization",
-      "name": "Salish Ponds Press"
-    },
-    "hasPart": [
-      {
-        "@type": "Book",
-        "name": "Pacific Northwest Gothic: A History of the Future",
-        "url": "https://a.co/d/058nskV9"
-      },
-      {
-        "@type": "Book",
-        "name": "Why Old People Are Mean",
-        "url": "https://www.amazon.com/dp/B0BH589FM6"
-      },
-      {
-        "@type": "Book",
-        "name": "The Duke of Morrison Street",
-        "url": "https://www.amazon.com/dp/B002YQ2K38"
-      },
-      {
-        "@type": "Book",
-        "name": "The Holders of Helmut Street",
-        "url": "https://www.amazon.com/dp/B0859LW6M2"
-      },
-      {
-        "@type": "Book",
-        "name": "Malady Manor",
-        "url": "https://www.amazon.com/dp/B0033AGQ8Y"
-      }
-    ]
-  }
-</script>
-</body>
-</html>
