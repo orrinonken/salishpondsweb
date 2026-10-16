@@ -475,3 +475,75 @@
           <a class="btn" href="https://medium.com/@orrinonken" target="_blank" rel="noopener">
             Read essays
           </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="wrap">
+  <div class="grid">
+    <div class="col-12">
+      <div class="small">
+        © <span id="year"></span> Orrin Onken • Salish Ponds Press. All rights reserved.
+        • <a href="#about">About</a>
+        • <a href="#books">Books</a>
+        • <a href="https://medium.com/@orrinonken" target="_blank" rel="noopener">Medium</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+<!-- Structured data -->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Orrin Onken",
+    "jobTitle": "Author",
+    "description": "Retired elder-law attorney and author of Pacific Northwest Gothic, the Leopold Larson mysteries, and essays on aging.",
+    "url": "https://salishpondspress.com/",
+    "sameAs": [
+      "https://medium.com/@orrinonken"
+    ],
+    "publisher": {
+      "@type": "Organization",
+      "name": "Salish Ponds Press"
+    },
+    "hasPart": [
+      {
+        "@type": "Book",
+        "name": "Pacific Northwest Gothic: A History of the Future",
+        "url": "https://a.co/d/058nskV9"
+      },
+      {
+        "@type": "Book",
+        "name": "Why Old People Are Mean",
+        "url": "https://www.amazon.com/dp/B0BH589FM6"
+      },
+      {
+        "@type": "Book",
+        "name": "The Duke of Morrison Street",
+        "url": "https://www.amazon.com/dp/B002YQ2K38"
+      },
+      {
+        "@type": "Book",
+        "name": "The Holders of Helmut Street",
+        "url": "https://www.amazon.com/dp/B0859LW6M2"
+      },
+      {
+        "@type": "Book",
+        "name": "Malady Manor",
+        "url": "https://www.amazon.com/dp/B0033AGQ8Y"
+      }
+    ]
+  }
+</script>
+</body>
+</html>
